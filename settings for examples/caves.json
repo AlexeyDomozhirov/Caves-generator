@@ -1,0 +1,31 @@
+{
+    "drawSettings" :
+    {
+        "airSymbol" : " ",
+        "airColorSettings" : null,
+
+        "wallSymbol" : "*",
+        "wallColorSettings" :
+        {
+            "color" : "White",
+            "intensity" : "Vivid"
+        },
+        "useSeparators" : true
+    },
+
+    "generatorSettings" : 
+    {
+        "stepRules" : 
+        {
+            "bornRule" : [5,6,7,8],
+            "saveRule" : [4,5,6,7,8],
+            "locality" : "Moore",
+            "borderProcessMode" : "CountAsAlive"
+        },
+        "size" : [1000, 410],
+        "stepsCount" : 20,
+        "spawnChance" : 0.5
+    },
+
+    "useInteractiveGeneration" : false
+}

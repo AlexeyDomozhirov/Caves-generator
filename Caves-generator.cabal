@@ -1,0 +1,44 @@
+cabal-version:      3.0
+name:               Caves-generator
+version:            1.0
+synopsis:           Simple console caves generator based on cellular automatons
+
+license:            MIT
+license-file:       LICENSE
+author:             AlexeyDomozhirov
+maintainer:         alexei-2006@bk.ru
+
+category:           Graphics
+build-type:         Simple
+
+executable Caves-generator
+    main-is:          Main.hs
+    
+    other-modules:    CavesSystem.Draw.Settings.Type,
+                      CavesSystem.Draw.Func,
+                      CavesSystem.Generator.Settings.Type,
+                      CavesSystem.Generator.Func,
+                      CavesSystem.Type,
+
+                      CellularAutomaton.Rules.Type,
+                      CellularAutomaton.Rules.BorderProcessMode.Type,
+                      CellularAutomaton.Rules.Locality.Type,
+                      CellularAutomaton.Rules.BSRule.Type,
+                      CellularAutomaton.Universe.NextStep,
+                      CellularAutomaton.Universe.Random,
+                      CellularAutomaton.Universe.Type,
+
+                      ProgramSettings.Type,
+
+    build-depends:    base ^>= 4.17.2.1,
+                      containers ^>= 0.6.8,
+                      mtl ^>= 2.3.1,
+                      aeson ^>= 2.2.1.0,
+                      matrix ^>= 0.3.6.3,
+                      bytestring ^>= 0.12.0.2,
+                      random ^>= 1.2.1.2,
+                      ansi-terminal ^>= 1.1,
+                      infinite-list ^>= 0.1.1,
+
+    hs-source-dirs:   src
+    default-language: Haskell2010
