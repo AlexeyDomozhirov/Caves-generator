@@ -22,7 +22,7 @@
             "locality" : "Moore",
             "borderProcessMode" : "CountAsAlive"
         },
-        "size" : [1000, 410],
+        "size" : [60, 80],
         "stepsCount" : 20,
         "spawnChance" : 0.5
     },
